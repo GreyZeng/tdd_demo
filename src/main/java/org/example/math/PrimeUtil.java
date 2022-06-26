@@ -9,7 +9,7 @@ public class PrimeUtil {
             return new int[]{};
         }
         int[] primes = new int[max];
-        int count = 0, j = 0;
+        int count = 0;
         for (int num = 2; num < max; num++) {
             if (isPrime(num)) {
                 primes[count++] = num;
@@ -20,7 +20,7 @@ public class PrimeUtil {
     }
 
     private static boolean isPrime(int num) {
-        int i ;
+        int i;
         for (i = 2; i < num / 2 + 1; i++) {
             if (num % i == 0) {
                 return false;
